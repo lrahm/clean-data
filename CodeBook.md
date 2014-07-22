@@ -8,24 +8,10 @@ by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
 The study collected body motion data from 30 people with a smartphone attached to each subject. 
 The original data description information is appended to this file.
 
-The following is a list of the variables calculated for the class project and the steps taken to 
-generate the data. The mean value was calculated for each of the original data vectors 
+The following is a list of the variables calculated for the class project. 
+The mean value was calculated for each of the original data vectors 
 that was a mean value or a standard deviation value grouped by ACTIVITY and SUBJECT. 
 48 vectors are calculated.
-
-Steps to process data
-=====================
-	1 Import both the training and test data into dataframes. Append the SUBJECT and ACTIVITY vectors.
-	2 Combine the training and test data into one data.frame named df.all
-	3 Import the variable names and assign them to df.all
-	4 Subset the df.all to only include those features that calculate the mean() or std()
-	5 Assign descriptive activity names. The values come from the file activity_labels.txt
-	6 Create factors from the subjects for grouping 
-	7 split - apply - combine the dataframe to calculate the mean of the variables grouped by activity, subject and feature
-	8 Rename the variables by placing each variable in the mean() function, ex. mean(fBodyAcc-mean()-X)
-	9 Named this way to show how each variable was processed
-	10 Expand back out to wide form with all the variables as column headings.
-	11 Write tidy data to the summary.txt file
 
 
 The calculated variable list
