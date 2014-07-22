@@ -15,17 +15,17 @@ that was a mean value or a standard deviation value grouped by ACTIVITY and SUBJ
 
 Steps to process data
 =====================
-1 Import both the training and test data into dataframes. Append the SUBJECT and ACTIVITY vectors.
-2 Combine the training and test data into one data.frame named df.all
-3 Import the variable names and assign them to df.all
-4 Subset the df.all to only include those features that calculate the mean() or std()
-5 Assign descriptive activity names. The values come from the file activity_labels.txt
-6 Create factors from the subjects for grouping 
-7 split - apply - combine the dataframe to calculate the mean of the variables grouped by activity, subject and feature
-8 Rename the variables by placing each variable in the mean() function, ex. mean(fBodyAcc-mean()-X)
-9 Named this way to show how each variable was processed
-10 Expand back out to wide form with all the variables as column headings.
-11 Write tidy data to the summary.txt file
+	1 Import both the training and test data into dataframes. Append the SUBJECT and ACTIVITY vectors.
+	2 Combine the training and test data into one data.frame named df.all
+	3 Import the variable names and assign them to df.all
+	4 Subset the df.all to only include those features that calculate the mean() or std()
+	5 Assign descriptive activity names. The values come from the file activity_labels.txt
+	6 Create factors from the subjects for grouping 
+	7 split - apply - combine the dataframe to calculate the mean of the variables grouped by activity, subject and feature
+	8 Rename the variables by placing each variable in the mean() function, ex. mean(fBodyAcc-mean()-X)
+	9 Named this way to show how each variable was processed
+	10 Expand back out to wide form with all the variables as column headings.
+	11 Write tidy data to the summary.txt file
 
 
 The calculated variable list
