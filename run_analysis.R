@@ -1,4 +1,3 @@
-# run_analysis.R
 # Get and Clean Data
 # Class Project
 # Lars Rahm
@@ -9,21 +8,21 @@ library(reshape2)
 library(stringr)
 
 # Import both the training and test data into dataframes.
-subject.train = read.table("./data/train/subject_train.txt")
-activity.train = read.table("./data/train/y_train.txt")
-data.train = read.table("./data/train/x_train.txt")
+subject.train = read.table("./train/subject_train.txt")
+activity.train = read.table("./train/y_train.txt")
+data.train = read.table("./train/x_train.txt")
 df.train <- data.frame(subject.train, activity.train, data.train)
 
-subject.test = read.table("./data/test/subject_test.txt")
-activity.test = read.table("./data/test/y_test.txt")
-data.test = read.table("./data/test/x_test.txt")
+subject.test = read.table("./test/subject_test.txt")
+activity.test = read.table("./test/y_test.txt")
+data.test = read.table("./test/x_test.txt")
 df.test <- data.frame(subject.test, activity.test, data.test)
 
 # Combine the training and test data into one data.frame
 df.all <- rbind(df.train, df.test)
 
 # Import the variable names and assign them to df.all
-features = read.table("./data/features.txt")
+features = read.table("features.txt")
 features.vector <- as.character(features$V2)
 n1 <- c("subject", "activity")
 n2 <- features.vector
@@ -56,4 +55,4 @@ df.melt.summary$variable <- paste0('mean(', df.melt.summary$variable, ')')
 df.tidy <- dcast(df.melt.summary, activity + subject ~ variable, value.var='mean1')
 
 # Write tidy data to the summary.txt file
-write.table(df.tidy, file="./data/summary.txt", quote=FALSE, row.names=FALSE)
+write.table(df.tidy, file="summary.txt", quote=FALSE, row.names=FALSE)
