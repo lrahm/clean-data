@@ -1,6 +1,5 @@
-==================================================================
-Get and Clean Data
-Class Project
+Get and Clean Data Class Project
+================================
 Summer 2014
 Lars Rahm
 
@@ -80,3 +79,4 @@ Use of this dataset in publications must be acknowledged by referencing the foll
 This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
 
 Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
+
