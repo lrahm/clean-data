@@ -34,7 +34,7 @@ For each record it is provided:
 The dataset includes the following files:
 =========================================
 
-- 'README.txt'
+- 'README.md'
 
 - 'run_analysis.R' - The R script that generates the summary tidy data set for the class project.
 
